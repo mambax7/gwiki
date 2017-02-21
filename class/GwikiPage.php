@@ -247,8 +247,9 @@ class GwikiPage
      */
     public function getMaxUploadSize()
     {
-        $val  = trim(ini_get('upload_max_filesize'));
-        $last = strtolower($val[strlen($val) - 1]);
+        $maxSizeIni  = trim(ini_get('upload_max_filesize'));
+        $last = strtolower($maxSizeIni[strlen($maxSizeIni) - 1]);
+        $val = substr($maxSizeIni, 0, -1);
         switch ($last) {
             // The 'G' modifier is available since PHP 5.1.0
             case 'g':
