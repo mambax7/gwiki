@@ -1,5 +1,10 @@
 gwiki ChangeLog
 
+1.1 RC2 Release date: NOT RELEASED
+==================================
+- fix bug in Max Size Upload (mamba)
+
+
 1.1 RC1 Release date: Jan 31, 2017
 ==================================
 - Xmf conversions
